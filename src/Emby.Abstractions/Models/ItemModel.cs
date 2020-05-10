@@ -8,7 +8,7 @@ namespace Devpro.Emby.Abstractions.Models
         Video
     };
 
-    public enum TypeEnum
+    public enum ItemType
     {
         Movie
     };
@@ -26,7 +26,7 @@ namespace Devpro.Emby.Abstractions.Models
         public bool IsFolder { get; set; }
 
         [JsonProperty("Type")]
-        public TypeEnum ItemType { get; set; }
+        public ItemType ItemType { get; set; }
 
         public UserDataModel UserData { get; set; }
 

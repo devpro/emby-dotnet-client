@@ -1,5 +1,4 @@
-﻿using System;
-using System.Net.Http;
+﻿using System.Net.Http;
 using System.Threading.Tasks;
 using Devpro.Emby.Abstractions.Repositories;
 using Devpro.Emby.Client.Repositories;

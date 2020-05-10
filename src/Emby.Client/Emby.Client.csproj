@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Devpro.Emby.Client</AssemblyName>
+    <RootNamespace>Devpro.Emby.Client</RootNamespace>
+    <ProjectGuid>{5F1EE5BD-866E-444D-9D9E-7ED84E8006AC}</ProjectGuid>
+    <Authors>devprofr</Authors>
+    <Description>A package that provides access to Emby services.</Description>
+    <RepositoryUrl>https://github.com/devpro/emby-dotnet-client</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/devpro/emby-dotnet-client</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.3" />
+    <PackageReference Include="Withywoods.Net.Http" Version="1.2.7" />
+    <PackageReference Include="Withywoods.Serialization" Version="1.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Emby.Abstractions\Emby.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
